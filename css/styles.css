@@ -57,7 +57,6 @@
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  margin-right: 30;
 }
 .header-links a:hover,
 .header-links a:focus {
@@ -83,7 +82,10 @@
 .contact-links {
   display: flex;
   flex-wrap: wrap;
-  margin-inline-start: 120px;
+  gap: 24px;
+}
+.contact-space {
+  margin-inline-start: 250px;
 }
 /* Body */
 .body {
@@ -150,10 +152,7 @@ ul {
 .our-goals {
   display: flex;
   justify-content: center;
-  align-items: center;
   gap: 24px;
-  width: auto;
-  flex-wrap: wrap;
 }
 /* We doing */
 .we-doing {
