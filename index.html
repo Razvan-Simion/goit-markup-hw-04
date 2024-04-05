@@ -24,9 +24,7 @@
         <!-- Nav-bar -->
         <nav class="header-links">
             <ul class="nav">
-                <li>
-                    <a class="nav" href="index.html">Studio</a>
-                </li>
+                <li><a class="nav" href="index.html">Studio</a></li>
                 <li><a class="nav" href="portofolio.html">Portofolio</a></li>
                 <li><a class="nav" href="contacts.html">Contacts</a></li>
             </ul>
@@ -47,7 +45,13 @@
         <section class="container">
             <div class="hero-section">
                 <h1 class="hero-title">Effective Solutions<br> for Your Business</h1>
-                <button type="button" class="order-button">Order Service</button>
+                <button type="button" data-modal-open class="order-button order-service-btn ">Order
+                    Service</button>
+            </div>
+            <div class="modal is-hidden" data-modal>
+                <div class="modal-content">
+                    <button class="close-btn" data-modal-close>&times;</button>
+                </div>
             </div>
         </section>
         <!-- Our-goals-section-->
@@ -310,21 +314,21 @@
                 <div class="social-content">
                     <div class="icon-list footer-icon-list">
                         <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer nofollow"
-                            aria-label="instagram-link" class="icon">
+                            aria-label="instagram-link" class="icon footer-icon">
                             <svg>
                                 <use href="./images/icons.svg#icon-instagram">
                                 </use>
                             </svg>
                         </a>
                         <a href="https://twitter.com/" target="_blank" rel="noopener noreferrer nofollow"
-                            aria-label="twitter-link" class="icon">
+                            aria-label="twitter-link" class="icon footer-icon">
                             <svg>
                                 <use href="./images/icons.svg#icon-twitter">
                                 </use>
                             </svg>
                         </a>
                         <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer nofollow"
-                            aria-label="facebook-link" class=" icon">
+                            aria-label="facebook-link" class=" icon footer-icon">
                             <svg>
                                 <use href="./images/icons.svg#icon-facebook">
                                 </use>
@@ -342,6 +346,7 @@
             </div>
         </footer>
     </section>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
